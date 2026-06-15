@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trang chủ</title>
+<title>Giới thiệu</title>
 <style>
 
 :root{
@@ -43,34 +43,6 @@ button{font:inherit;cursor:pointer;border:none;background:none;}
   .thanhdieuhuong__toggle--active .thanhdieuhuong__toggle-bar:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
 }
 
-.hero{background:var(--color-bg-alt);}
-.hero__container{max-width:var(--container-width);margin-inline:auto;padding:var(--space-xl) var(--space-md);display:grid;grid-template-columns:1.1fr 1fr;gap:var(--space-xl);align-items:center;}
-.hero__eyebrow{color:var(--color-primary);font-weight:600;font-size:var(--fs-sm);text-transform:uppercase;letter-spacing:.06em;margin-bottom:var(--space-xs);}
-.hero__title{font-family:var(--font-heading);font-size:var(--fs-2xl);line-height:1.2;margin-bottom:var(--space-sm);}
-.hero__desc{color:var(--color-text-muted);font-size:var(--fs-base);margin-bottom:var(--space-md);max-width:34rem;}
-.hero__actions{display:flex;gap:var(--space-sm);flex-wrap:wrap;}
-.hero__btn{padding:0.75rem var(--space-md);border-radius:var(--radius);font-weight:600;font-size:var(--fs-sm);}
-.hero__btn--primary{background:var(--color-primary);color:#fff;}
-.hero__btn--ghost{border:1px solid var(--color-border);color:var(--color-text);}
-.hero__media{display:flex;justify-content:center;}
-.hero__media-shape{width:100%;aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));box-shadow:var(--shadow);}
-@media (max-width:1023px){.hero__container{grid-template-columns:1fr;gap:var(--space-md);} .hero__title{font-size:var(--fs-xl);}}
-@media (max-width:767px){.hero__container{padding:var(--space-lg) var(--space-md);} .hero__media{order:-1;} .hero__media-shape{aspect-ratio:16/9;}}
-
-.dichvu{background:var(--color-bg);}
-.dichvu__container{max-width:var(--container-width);margin-inline:auto;padding:var(--space-xl) var(--space-md);}
-.dichvu__head{text-align:center;max-width:36rem;margin:0 auto var(--space-lg);}
-.dichvu__eyebrow{color:var(--color-primary);font-weight:600;font-size:var(--fs-sm);text-transform:uppercase;letter-spacing:.06em;}
-.dichvu__title{font-family:var(--font-heading);font-size:var(--fs-xl);margin-top:var(--space-xs);}
-.dichvu__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md);}
-.dichvu__card{border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--space-md);transition:box-shadow .2s ease,transform .2s ease;}
-.dichvu__card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
-.dichvu__icon{width:44px;height:44px;border-radius:var(--radius);background:var(--color-primary);margin-bottom:var(--space-sm);}
-.dichvu__card-title{font-family:var(--font-heading);font-size:var(--fs-lg);margin-bottom:var(--space-xs);}
-.dichvu__card-desc{color:var(--color-text-muted);font-size:var(--fs-sm);}
-@media (min-width:768px) and (max-width:1023px){.dichvu__grid{grid-template-columns:repeat(2,1fr);}}
-@media (max-width:767px){.dichvu__grid{grid-template-columns:1fr;} .dichvu__container{padding:var(--space-lg) var(--space-md);}}
-
 .footer{background:#111827;color:#e5e7eb;}
 .footer__container{max-width:var(--container-width);margin-inline:auto;padding:var(--space-xl) var(--space-md) var(--space-md);display:grid;grid-template-columns:2fr 1fr;gap:var(--space-md);}
 .footer__logo{font-family:var(--font-heading);font-size:var(--fs-lg);font-weight:700;color:#fff;}
@@ -100,32 +72,6 @@ button{font:inherit;cursor:pointer;border:none;background:none;}
     </button>
   </div>
 </header>
-
-<section class="hero">
-  <div class="hero__container">
-    <div class="hero__content">
-      <p class="hero__eyebrow">Giải pháp cho doanh nghiệp của bạn</p>
-      <h1 class="hero__title">Xây dựng website nhanh, đẹp và chuyên nghiệp</h1>
-      <p class="hero__desc">Ghép các khối nội dung có sẵn, tùy chỉnh theo ý bạn và xuất ra website tĩnh hoàn chỉnh chỉ trong vài phút.</p>
-      <div class="hero__actions">
-        <a href="./contact.html" class="hero__btn hero__btn--primary">Bắt đầu ngay</a>
-        <a href="./about.html" class="hero__btn hero__btn--ghost">Xem demo</a>
-      </div>
-    </div>
-    <div class="hero__media" aria-hidden="true"><div class="hero__media-shape"></div></div>
-  </div>
-</section>
-
-<section class="dichvu">
-  <div class="dichvu__container">
-    <div class="dichvu__head"><span class="dichvu__eyebrow">Dịch vụ</span><h2 class="dichvu__title">Những gì chúng tôi cung cấp</h2></div>
-    <div class="dichvu__grid">
-      <article class="dichvu__card"><div class="dichvu__icon"></div><h3 class="dichvu__card-title">Thiết kế giao diện</h3><p class="dichvu__card-desc">Mô tả ngắn về dịch vụ thiết kế giao diện cho website của bạn.</p></article>
-      <article class="dichvu__card"><div class="dichvu__icon"></div><h3 class="dichvu__card-title">Phát triển component</h3><p class="dichvu__card-desc">Mô tả ngắn về dịch vụ phát triển các thành phần tái sử dụng.</p></article>
-      <article class="dichvu__card"><div class="dichvu__icon"></div><h3 class="dichvu__card-title">Tối ưu hiệu suất</h3><p class="dichvu__card-desc">Mô tả ngắn về dịch vụ tối ưu tốc độ và hiệu suất website.</p></article>
-    </div>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="footer__container">
